@@ -8,7 +8,7 @@ This is a standalone Claude Code project for UCAN Sports' Media IP: informative,
 
 | Resource | Read when... |
 | :---- | :---- |
-| Media IP Scripts Resources/content-pillars.md | Before drafting any new script, or any weekly batch of scripts |
+| Media IP Scripts Resources/content-pillars.md | Before drafting any new script, or any weekly batch of scripts — **read-only**, see rule below |
 | Media IP Scripts Resources/past-scripts/ | Wanting examples of past produced scripts for this IP (two shoots' worth so far) |
 | Media IP Scripts Resources/reference-corpus/ | Wanting the 39-script football reel corpus (same one behind `ucan-reel-scriptwriter`), reused here deliberately as a hook-craft reference, not as this IP's own voice |
 | Media IP Scripts Resources/topics-log.md | Before suggesting new topics (avoid repeats) and after finalizing a week's topics (log them) |
@@ -25,18 +25,22 @@ UcanSports runs three pages under this IP — **football, cricket, racket** — 
 4. Draft each of the 12 scripts as its own Markdown file in a dated folder: `YYYY-MM-DD/<page>_<short-slug>.md` (e.g. `2026-10-06/football_transfer-window-myths.md`) at the project root.
 5. Use the `/media-ip-scriptwriter` skill (`.claude/skills/media-ip-scriptwriter`) when drafting — it holds the two established house voices (a timed beat-table style and a cinematic prose style), extracted from the two past shoots' scripts.
 6. Draft and revise in Markdown. Don't compile a PDF or export automatically — only when explicitly asked. When asked, use the `/media-ip-compile` skill (`.claude/skills/media-ip-compile`) to combine the week's scripts into one branded shoot-day PDF.
-7. Once footage is shot and ready to post, use the `/media-ip-captions` skill (`.claude/skills/media-ip-captions`) to generate Instagram caption/hashtag/tag copy for the week's scripts — see "Platform Guidance" below before posting.
+7. Once footage is shot and ready to post, use the `/media-ip-captions` skill (`.claude/skills/media-ip-captions`) to generate Instagram caption/hashtag/tag copy for the week's scripts.
 
 ## Weekly Research Agent
 
 Run via the `/media-ip-research` skill (`.claude/skills/media-ip-research`), on demand — usually Monday, but whenever Adit chooses to run it:
 - Checks `Media IP Scripts Resources/topics-log.md` and skips any subject used in the last 3 shoot weeks.
-- Researches current, timely, hook-worthy topic angles for each of the 3 pages (football, cricket, racket) — suited to a talking-head informative video, not a highlight reel.
+- Researches current, timely, hook-worthy topic angles for each of the 3 pages (football, cricket, racket) — suited to a talking-head informative video, not a highlight reel — covering both the 4 established pillars and a dedicated **hot topics** pass (breaking/trending news per sport, right now). Hot topics isn't a 5th pillar — it's a research angle layered into the existing 4, flagged with 🔥 in the output.
 - Produces **5–10 topics per page** (15–30 total), each with a one-line angle/hook rationale, grouped by page.
 - Writes the list to a **Word doc** (.docx) at `YYYY-MM-DD/topics.docx` (project root), where `YYYY-MM-DD` is that week's upcoming shoot date (create the dated folder if it doesn't exist yet), then commits and pushes it — so it's git-synced to the team automatically via the normal Team Sync rule.
 - This list feeds directly into the shoot-day finalization step (Workflow step 2) — don't skip straight to drafting scripts without checking whether that week's `topics.docx` exists first.
 
 **Note:** this was originally planned as a fully automatic Monday cloud schedule, but that needs GitHub connected to Adit's Claude account for cloud access (separate from the local `gh` login already set up) — not done yet. Runs on demand for now via `/media-ip-research`; revisit a real schedule once that's connected, if still wanted.
+
+## content-pillars.md Is Locked
+
+**Never edit `Media IP Scripts Resources/content-pillars.md` unless Adit explicitly asks for that file to be updated by name.** It's the foundational taxonomy the whole project is built on — every skill, every dated folder, every topic log entry assumes it's stable. Don't touch it as a side effect of research, drafting, learning a new reference, or anything else, no matter how reasonable a tweak seems in the moment. If something seems to call for a pillar change, say so and ask — don't just make the edit.
 
 ## Skill Update Approval
 
@@ -45,16 +49,6 @@ Anyone can submit a script reference they like via the `/media-ip-learn` skill (
 - **Approved identity**: `editsbyadit@gmail.com` (checked via local `git config user.email` in this project — a practical proxy, not cryptographic proof, but the agreed mechanism).
 - Every submission lands in `Media IP Scripts Resources/learned-references/pending/` first — never applied automatically, regardless of who submits it.
 - Even when the identity check passes (i.e. it's Adit), still ask him explicitly before writing the change — don't apply pending references silently just because the identity matched. Full flow is in the `media-ip-learn` skill.
-
-## Platform Guidance (Instagram vs. YouTube)
-
-Not legal advice — general guidance to sanity-check before posting, since the two platforms differ:
-
-- **Footage sourcing risk is the bigger issue than hashtags.** Scripts' `VISUAL:` cues sometimes imply real broadcast highlight footage (a specific goal, a specific over). Rights holders (leagues, broadcasters — FIFA/UEFA/BCCI/IPL etc.) actively claim or take down clips of their footage on both platforms. Prefer original graphics, stock footage, re-creations, or officially licensed clips over pulling raw broadcast highlights — flag it if a script's visual plan leans on footage that isn't clearly sourced.
-- **YouTube** runs Content ID: unlicensed copyrighted audio/video can get a claim (revenue redirected, or a block) automatically, even on Shorts. It's stricter and more automated than Instagram about this.
-- **Instagram** enforcement leans more on audio licensing for trending sounds (personal accounts get broader music-library access than business/creator accounts) and on rights-holder takedown requests for footage, rather than an automated claim system as pervasive as YouTube's.
-- **Music**: use a properly licensed library (YouTube Audio Library, or a licensed production-music source) for anything going to both platforms, rather than relying on Instagram's trending-audio access, which doesn't carry over to YouTube and may not even be available on a business/creator Instagram account.
-- This hasn't been turned into a formal policy yet — worth deciding with Adit once it comes up in practice, and capturing the decision in MEMORY.md.
 
 ## Editorial Rules
 

@@ -33,5 +33,3 @@ Three lines per script, in this order:
 ## Platform notes
 
 This format is **Instagram-specific** (caption + hashtags + Instagram-style tags). YouTube uses a different structure entirely (title, description, a separate tags field in YouTube Studio — no hashtag wall the way Instagram uses one). If Adit wants YouTube posting copy generated too, that needs its own format spec from him first — don't improvise YouTube titles/descriptions against the Instagram format above.
-
-Also see the copyright/rights notes in `CLAUDE.md` (Platform Guidance section) before finalizing what footage/audio a script's `VISUAL:` cues call for — that's a sourcing decision made earlier in production, not something this caption step can fix after the fact, but flag it here if something looks risky (e.g. a cue that calls for raw broadcast highlight footage).
