@@ -22,4 +22,9 @@ Combines all finalized scripts for one shoot week into a single branded PDF, mir
 
 ## Brand Assets
 
-Logos live in `Media IP Scripts Resources/brand/`. **This folder is currently empty** — Adit is sharing the UCAN Sports and Corpide logo files. Until they're added, build the PDF with clear placeholder logo boxes (labelled "UCAN SPORTS" / "CORPIDE") rather than blocking, and note in the output that placeholders were used. Once real logo files land in `brand/`, use them and drop the placeholder note.
+Logos live in `Media IP Scripts Resources/brand/`:
+- `ucan-sports-emblem-black.png` / `ucan-sports-emblem-white.png` — UCAN Sports emblem, pick by background (white background → black emblem, dark background → white emblem).
+- `corpide-emblem.png` / `corpide-emblem-transparent.png` — Corpide emblem (the transparent version for overlaying on a colored/textured header).
+- `corpide-wordmark-black.png` / `corpide-wordmark-white.png` — Corpide text logo, pick by background same as above.
+
+Match the reference PDF's header layout: UCAN Sports emblem + "UCAN SPORTS · MEDIA IP" eyebrow text on one side, Corpide mark (emblem or wordmark, whichever reads cleaner at header size) on the other, orange accent rule beneath.
