@@ -2,7 +2,7 @@
 
 ## Identity
 
-This workstation is for writing and revising scripts for UCAN Sports' new media IP: informative, talking-head-style videos designed to hook viewers from the first second and hold them through to the end. Route here when the task is drafting a new talking-head script, revising one, or reviewing produced scripts/performance for patterns to reuse. Don't route here for short-form sports reels (that's [Reel Scripts](../Reel%20Scripts/CLAUDE.md)), the website, or broader IP strategy not tied to an individual script.
+This is a standalone Claude Code project for UCAN Sports' Media IP: informative, talking-head-style videos designed to hook viewers from the first second and hold them through to the end. Route here for drafting a new talking-head script, revising one, or reviewing produced scripts/performance for patterns to reuse. This project is self-contained (its own CLAUDE.md, MEMORY.md, resources, and skills) so it can be shared or handed off as a unit. It does not cover UCAN's short-form sports reels (a separate "Reel Scripts" workstation elsewhere), the website, or broader IP strategy not tied to an individual script.
 
 ## Resources
 
@@ -19,30 +19,29 @@ UcanSports runs three pages under this IP — **football, cricket, racket** — 
 1. **Monday (or whenever Adit chooses)**: run `/media-ip-research` to research topics. It produces 5–10 candidate topics per page (15–30 total), written to a Word doc for that week's shoot. See "Weekly Research Agent" below.
 2. **Tuesday (shoot day)**: Adit reviews the topics doc and finalizes 4 topics per page (12 total) — either by editing the doc or by telling Claude directly.
 3. **Before drafting**, always read `Media IP Scripts Resources/content-pillars.md` first — it defines what each page's content should be about and stay on-brand for.
-4. Draft each of the 12 scripts as its own Markdown file in a dated folder: `Media IP Scripts/YYYY-MM-DD/<page>_<short-slug>.md` (e.g. `2026-10-06/football_transfer-window-myths.md`), mirroring `Reel Scripts`' dated-folder convention.
-5. Use the `/media-ip-scriptwriter` skill (workspace root: `../.claude/skills/media-ip-scriptwriter`, same convention as `ucan-reel-scriptwriter`) when drafting — it holds the two established house voices (a timed beat-table style and a cinematic prose style), extracted from the two past shoots' scripts.
+4. Draft each of the 12 scripts as its own Markdown file in a dated folder: `YYYY-MM-DD/<page>_<short-slug>.md` (e.g. `2026-10-06/football_transfer-window-myths.md`) at the project root.
+5. Use the `/media-ip-scriptwriter` skill (`.claude/skills/media-ip-scriptwriter`) when drafting — it holds the two established house voices (a timed beat-table style and a cinematic prose style), extracted from the two past shoots' scripts.
 6. Draft and revise in Markdown. Don't compile a PDF or export automatically — only when explicitly asked.
 
 ## Weekly Research Agent
 
-Run via the `/media-ip-research` skill (workspace root: `../.claude/skills/media-ip-research`), on demand — normally Monday, but whenever Adit chooses to run it:
+Run via the `/media-ip-research` skill (`.claude/skills/media-ip-research`), on demand — normally Monday, but whenever Adit chooses to run it:
 - Researches current, timely, hook-worthy topic angles for each of the 3 pages (football, cricket, racket) — suited to a talking-head informative video, not a highlight reel.
 - Produces **5–10 topics per page** (15–30 total), each with a one-line angle/hook rationale, grouped by page.
-- Writes the list to a **Word doc** (.docx) at `Media IP Scripts/YYYY-MM-DD/topics.docx`, where `YYYY-MM-DD` is that week's upcoming Tuesday shoot date (create the dated folder if it doesn't exist yet), then commits and pushes it — so it's git-synced to the team automatically via the normal Team Sync rule.
+- Writes the list to a **Word doc** (.docx) at `YYYY-MM-DD/topics.docx` (project root), where `YYYY-MM-DD` is that week's upcoming Tuesday shoot date (create the dated folder if it doesn't exist yet), then commits and pushes it — so it's git-synced to the team automatically via the normal Team Sync rule.
 - This list feeds directly into Tuesday's finalization step (Workflow step 2) — don't skip straight to drafting scripts without checking whether that week's `topics.docx` exists first.
 
 **Note:** this was originally planned as a fully automatic Monday cloud schedule, but that needs GitHub connected to Adit's Claude account for cloud access (separate from the local `gh` login already set up) — not done yet. Runs on demand for now via `/media-ip-research`; revisit a real schedule once that's connected, if still wanted.
 
 ## Editorial Rules
 
-Follow my voice principles in 00_Resources (voice-principles.md) for anything *not* covered below — but scripts themselves override it: this is a distinct, spoken-delivery, hook-driven voice, same way `Reel Scripts` overrides voice-principles.md for its sports-commentary voice. The `media-ip-scriptwriter` skill is the source of truth for script voice — it documents two established house styles (beat-table and cinematic) extracted directly from produced Month 1 scripts. Don't default to voice-principles.md for scripts; use it only for anything script-adjacent that isn't the script itself (e.g. a note to a teammate).
+This project's scripts have their own established voice — the `media-ip-scriptwriter` skill is the source of truth for it, documenting two house styles (beat-table and cinematic) extracted directly from produced Month 1 scripts. This project doesn't depend on any external voice-principles file; it's meant to be self-contained. Use the skill for scripts; use plain, direct, professional writing for anything script-adjacent that isn't the script itself (e.g. a note to a teammate).
 
 ## Team Sync
 
-This folder is a git repo shared with the team via a private GitHub repo (not the rest of `01 Adit Cowork` — just this folder). Follow these rules automatically, without being asked:
+This entire project (CLAUDE.md, MEMORY.md, Resources, and `.claude/skills/`) is one git repo shared with the team via a private GitHub repo. Everything needed to work on this IP lives inside this one repo — that's deliberate, so it can be cloned or handed off as a self-contained unit. Follow these rules automatically, without being asked:
 
-1. **At the start of every session** working in this workstation, run `git pull` first, so you're working from the latest CLAUDE.md and MEMORY.md teammates have pushed.
-2. **After any edit** to this CLAUDE.md or MEMORY.md during a session, immediately `git add`, commit with a short message describing the change, and `git push` — so the update reaches teammates without them touching git themselves.
+1. **At the start of every session** working in this project, run `git pull` first, so you're working from the latest CLAUDE.md, MEMORY.md, Resources, and skills teammates have pushed.
+2. **After any edit** to CLAUDE.md, MEMORY.md, Resources, or a skill file during a session, immediately `git add`, commit with a short message describing the change, and `git push` — so the update reaches teammates without them touching git themselves.
 3. **If `git pull` reports a conflict**, stop and surface it to the person in chat rather than trying to resolve it silently.
-4. `Media IP Scripts Resources/` (content pillars, past scripts, reference corpus) must also stay synced — it's what the skill and every draft are built from. New individual script drafts are lower priority to sync immediately, but commit them too when convenient.
-5. The `media-ip-scriptwriter` skill lives at the workspace root (`.claude/skills/`), outside this repo's scope, same as every other skill in this workspace — it now has real content (both house voices), so keeping it in sync across teammates matters. It isn't covered by this repo's git sync yet; decide with Adit how to share it too (e.g. a second shared repo for `.claude/skills/`, or teammates copying the file manually for now).
+4. New individual script drafts are lower priority to sync immediately, but commit them too when convenient.
