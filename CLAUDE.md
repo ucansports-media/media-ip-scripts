@@ -16,8 +16,8 @@ This workstation is for writing and revising scripts for UCAN Sports' new media 
 
 UcanSports runs three pages under this IP — **football, cricket, racket** — and shoots weekly, normally on **Tuesday**. Each shoot needs 4 scripts per page (12 total per week).
 
-1. **Monday, ~12–1pm**: a scheduled research agent runs automatically. It researches each of the 3 pages and produces 5–10 candidate topics per page (15–30 total), written to a shared Google Doc for that week. See "Weekly Research Agent" below.
-2. **Tuesday (shoot day)**: Adit reviews the Google Doc and finalizes 4 topics per page (12 total) — either in the doc or by telling Claude directly.
+1. **Monday (or whenever Adit chooses)**: run `/media-ip-research` to research topics. It produces 5–10 candidate topics per page (15–30 total), written to a Word doc for that week's shoot. See "Weekly Research Agent" below.
+2. **Tuesday (shoot day)**: Adit reviews the topics doc and finalizes 4 topics per page (12 total) — either by editing the doc or by telling Claude directly.
 3. **Before drafting**, always read `Media IP Scripts Resources/content-pillars.md` first — it defines what each page's content should be about and stay on-brand for.
 4. Draft each of the 12 scripts as its own Markdown file in a dated folder: `Media IP Scripts/YYYY-MM-DD/<page>_<short-slug>.md` (e.g. `2026-10-06/football_transfer-window-myths.md`), mirroring `Reel Scripts`' dated-folder convention.
 5. Use the `/media-ip-scriptwriter` skill (workspace root: `../.claude/skills/media-ip-scriptwriter`, same convention as `ucan-reel-scriptwriter`) when drafting — it holds the two established house voices (a timed beat-table style and a cinematic prose style), extracted from the two past shoots' scripts.
@@ -25,11 +25,13 @@ UcanSports runs three pages under this IP — **football, cricket, racket** — 
 
 ## Weekly Research Agent
 
-A scheduled task runs every **Monday around 12–1pm**:
+Run via the `/media-ip-research` skill (workspace root: `../.claude/skills/media-ip-research`), on demand — normally Monday, but whenever Adit chooses to run it:
 - Researches current, timely, hook-worthy topic angles for each of the 3 pages (football, cricket, racket) — suited to a talking-head informative video, not a highlight reel.
 - Produces **5–10 topics per page** (15–30 total), each with a one-line angle/hook rationale, grouped by page.
-- Writes the list to a **Google Doc** for that week (so non-technical teammates can open, discuss, and check off topics without touching git or the repo) and shares the link back to Adit.
-- This list feeds directly into Tuesday's finalization step (Workflow step 2) — don't skip straight to drafting scripts without checking whether that week's topics doc exists first.
+- Writes the list to a **Word doc** (.docx) at `Media IP Scripts/YYYY-MM-DD/topics.docx`, where `YYYY-MM-DD` is that week's upcoming Tuesday shoot date (create the dated folder if it doesn't exist yet), then commits and pushes it — so it's git-synced to the team automatically via the normal Team Sync rule.
+- This list feeds directly into Tuesday's finalization step (Workflow step 2) — don't skip straight to drafting scripts without checking whether that week's `topics.docx` exists first.
+
+**Note:** this was originally planned as a fully automatic Monday cloud schedule, but that needs GitHub connected to Adit's Claude account for cloud access (separate from the local `gh` login already set up) — not done yet. Runs on demand for now via `/media-ip-research`; revisit a real schedule once that's connected, if still wanted.
 
 ## Editorial Rules
 
