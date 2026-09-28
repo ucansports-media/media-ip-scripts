@@ -10,8 +10,8 @@ Run this on demand (normally Monday) to produce candidate script topics for the 
 ## Steps
 
 1. **Sync first**: run `git pull` at the project root, per the Team Sync rule in CLAUDE.md, so you're working from the latest shared state.
-2. **Read context**: `Media IP Scripts Resources/content-pillars.md` (the 4 pillars) and `CLAUDE.md` (workflow, cadence) at the project root.
-3. **Research**, using web search, current and timely angles for each of the 3 pages — **football, cricket, racket** — suited to a talking-head informative video (not a highlight reel — think storylines, records, rivalries, retrospectives, not "watch this clip"). Cover a spread across the 4 pillars (Player Aura, Rivalries, Past Tournaments/Team Content, League Fun Content) rather than clustering on one.
+2. **Read context**: `Media IP Scripts Resources/content-pillars.md` (the 4 pillars), `CLAUDE.md` (workflow, cadence) at the project root, and `Media IP Scripts Resources/topics-log.md` (subjects already used recently).
+3. **Research**, using web search, current and timely angles for each of the 3 pages — **football, cricket, racket** — suited to a talking-head informative video (not a highlight reel — think storylines, records, rivalries, retrospectives, not "watch this clip"). Cover a spread across the 4 pillars (Player Aura, Rivalries, Past Tournaments/Team Content, League Fun Content) rather than clustering on one. **Skip any subject (player/team/event) logged in `topics-log.md` within the last 3 shoot weeks** — match by subject, not exact title, so a reworded angle on the same player still counts as a repeat.
 4. **Produce 5–10 topics per page** (15–30 total), grouped by page, each with:
    - A short working title
    - Which pillar it fits
