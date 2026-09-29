@@ -7,7 +7,7 @@ description: "Write talking-head informative scripts for UCAN Sports' media IP (
 
 Writes 45–60 second talking-head scripts for UCAN Sports' media IP across football, cricket, and racket sports (tennis, badminton). The patterns below were extracted directly from **Month 1's produced scripts** (`Media IP Scripts Resources/past-scripts/`) — two real shoots, each covering all 4 content pillars × 3 sports (12 scripts each). This is not a generic template.
 
-**Before drafting, always read** `Media IP Scripts Resources/content-pillars.md` — every script must map to exactly one of the 4 pillars (Player Aura, Rivalries, Past Tournaments/Team Content, League Fun Content).
+**Before drafting, always read** `Media IP Scripts Resources/content-pillars.md` — every script must map to exactly one of the 4 pillars (Player Aura, Rivalries, Past Tournaments/Team Content, League Fun Content) — and `Media IP Scripts Resources/ucan-brand-context.md` for who UCAN actually is. UCAN is a Mumbai recreational sports league platform (cricket, football, racket sports) — these Media IP scripts are broader sports storytelling, not about UCAN's own leagues, but should still read as credible sports content from a real sports organization, not a generic content farm.
 
 There are **two live house voices**. Ask which one fits the topic/mood if it's not obvious, or default to the beat-table style (it's the more structured, easier-to-shoot default) when there's no clear signal either way.
 

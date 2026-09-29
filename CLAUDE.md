@@ -8,6 +8,7 @@ This is a standalone Claude Code project for UCAN Sports' Media IP: informative,
 
 | Resource | Read when... |
 | :---- | :---- |
+| Media IP Scripts Resources/ucan-brand-context.md | Before drafting any new script, or writing captions — who UCAN actually is (a Mumbai recreational sports league platform), its brand voice, and official channels |
 | Media IP Scripts Resources/content-pillars.md | Before drafting any new script, or any weekly batch of scripts — **read-only**, see rule below |
 | Media IP Scripts Resources/past-scripts/ | Wanting examples of past produced scripts for this IP (two shoots' worth so far) |
 | Media IP Scripts Resources/reference-corpus/ | Wanting the 39-script football reel corpus (same one behind `ucan-reel-scriptwriter`), reused here deliberately as a hook-craft reference, not as this IP's own voice |
