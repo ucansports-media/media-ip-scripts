@@ -14,7 +14,7 @@
 | 2026-10-06 | Cricket | Rivalries | Australia vs England (Ashes) | Australia vs England: The Ashes 4-1 and What's Next |
 | 2026-10-06 | Cricket | Past Tournaments | 1999 World Cup semi-final (AUS v SA) | 1999 World Cup Semi-Final: The Tie That Sent Australia Through |
 | 2026-10-06 | Cricket | League Fun | Fastest Test hundreds | Top 5 Fastest Test Hundreds — Ever |
-| 2026-10-06 | Racket | Player Aura | Jannik Sinner (US Open absence) | Sinner's Missed Slam: The Cost of a Knee |
-| 2026-10-06 | Racket | Rivalries | Alcaraz vs Sinner | Alcaraz vs Sinner: 10-5 and Counting |
+| 2026-10-06 | Racket | Player Aura | Jannik Sinner (US Open absence) | Jannik Sinner: Wimbledon Champion, Then Silence |
+| 2026-10-06 | Racket | Rivalries | Alcaraz vs Sinner | Alcaraz vs Sinner: The Rivalry Tennis Has Been Waiting For |
 | 2026-10-06 | Racket | Past Tournaments | Sindhu, 2019 World Championships | Sindhu's 2019 World Championship Gold in Basel |
-| 2026-10-06 | Racket | League Fun | Badminton rallies | Top 5 Badminton Rallies That Broke the Internet |
+| 2026-10-06 | Racket | League Fun | Badminton rallies | Top 5 Badminton Moments That Broke the Internet |
