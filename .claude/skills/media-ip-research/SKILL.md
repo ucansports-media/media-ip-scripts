@@ -25,6 +25,11 @@ Run this on demand (normally Monday) to produce candidate script topics for the 
 7. **Commit and push**: `git add`, commit (e.g. "Add topics for <date> shoot"), and `git push` at the project root, per the Team Sync rule — this is what makes the doc show up for teammates too.
 8. **Tell Adit** the doc is ready, with its path, and a quick one-line summary of the spread of topics (e.g. "6 football, 7 cricket, 5 racket, covering all 4 pillars").
 
+## Standing rules from Adit
+
+- Exactly 2 hot topics per sport.
+- Cricket must be global — players and teams from all cricketing nations, not India-centric.
+
 ## Notes
 
 - This was originally planned as a fully automated Monday cloud schedule, but that needs GitHub connected to the Claude account for cloud access — not set up yet. Until/unless that changes, this runs on demand via `/media-ip-research` (or a direct request) instead of on a timer.
