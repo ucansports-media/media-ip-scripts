@@ -31,4 +31,4 @@ This is the full publishing calendar, including non-script content — only Mon/
 | Sat | Memes / UGC |
 | Sun | League Fun Content |
 
-**Note:** this daily cadence (one pillar per weekday) is the original content-plan design. It doesn't fully match the "shoot once a week on Tuesday, 4 scripts per page" cadence Adit described more recently — worth confirming with Adit which is current before relying on either for scheduling assumptions. The 4-pillar breakdown and the 12-scripts/week total are consistent across both.
+**Note:** this daily cadence (one pillar per weekday) is the original content-plan design. It doesn't fully match the "shoot once a week on Tuesday, 4 scripts per page" cadence described more recently — worth confirming with the team which is current before relying on either for scheduling assumptions. The 4-pillar breakdown and the 12-scripts/week total are consistent across both.
