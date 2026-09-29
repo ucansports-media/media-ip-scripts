@@ -6,11 +6,11 @@ A simple, one-time setup. Takes about 5 minutes.
 
 1. **Claude Code** — install it from [claude.com/claude-code](https://claude.com/claude-code) if you don't have it.
 2. **GitHub Desktop** — download from [desktop.github.com](https://desktop.github.com/). This is the easy way to get the project files onto your computer without using any command-line commands.
-3. **A GitHub account** — free, sign up at [github.com](https://github.com/join) if you don't have one. Send Adit your username so he can give you access.
+3. **A GitHub account** — free, sign up at [github.com](https://github.com/join) if you don't have one. Send your username to whoever's setting up your access, so you can be added as a collaborator on UCAN's repo.
 
 ## Steps
 
-1. **Wait for the invite.** Adit adds you as a collaborator on the repo. You'll get an email from GitHub — click "View invitation" and accept it.
+1. **Wait for the invite.** You'll be added as a collaborator on UCAN's repo. You'll get an email from GitHub — click "View invitation" and accept it.
 
 2. **Clone the repo with GitHub Desktop:**
    - Open GitHub Desktop → File → Clone Repository
