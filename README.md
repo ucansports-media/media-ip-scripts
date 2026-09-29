@@ -8,9 +8,7 @@ UCAN's Media IP produces short informative talking-head videos, 12 a week (4 top
 
 ## Getting started
 
-1. **Install [Claude Code](https://claude.com/claude-code)** if you don't already have it.
-2. **Clone this repo** to your machine (GitHub Desktop is the easiest way if you're not comfortable with git commands: File → Clone Repository → paste this repo's URL).
-3. **Open the cloned folder in Claude Code.** Everything else is automatic from there — Claude reads [`CLAUDE.md`](CLAUDE.md) at the start of every session, which explains the full workflow, and pulls the latest shared state automatically.
+New to this project? Follow [`SETUP.md`](SETUP.md) — a simple step-by-step guide, no git experience needed.
 
 ## The weekly cycle, in short
 
@@ -22,7 +20,7 @@ UCAN's Media IP produces short informative talking-head videos, 12 a week (4 top
 | 4. Compile | `/media-ip-compile` | Combines the week's scripts into one branded shoot-day PDF |
 | 5. Caption | `/media-ip-captions` | Generates Instagram caption/hashtag/tag copy once footage is ready to post |
 
-Anyone can also run `/media-ip-learn` at any time to submit a script reference they liked — it's queued for review, not applied automatically.
+Anyone can also run `/media-ip-learn` at any time to log a script reference they liked, so it can be considered for the house voice.
 
 Full details, rules, and the reasoning behind them live in [`CLAUDE.md`](CLAUDE.md). Decision history is in [`MEMORY.md`](MEMORY.md).
 
