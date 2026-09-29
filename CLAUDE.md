@@ -14,7 +14,7 @@ This is a standalone Claude Code project for UCAN Sports' Media IP: informative,
 | Media IP Scripts Resources/reference-corpus/ | Wanting the 39-script football reel corpus (same one behind `ucan-reel-scriptwriter`), reused here deliberately as a hook-craft reference, not as this IP's own voice |
 | Media IP Scripts Resources/topics-log.md | Before suggesting new topics (avoid repeats) and after finalizing a week's topics (log them) |
 | Media IP Scripts Resources/brand/ | Compiling a shoot-day PDF — holds the UCAN Sports and Corpide logo files |
-| Media IP Scripts Resources/learned-references/ | Reviewing submitted script references awaiting (or already given) approval |
+| Media IP Scripts Resources/learned-references/ | Reviewing script references teammates or Adit have submitted as worth learning from |
 
 ## Workflow
 
@@ -43,14 +43,6 @@ Run via the `/media-ip-research` skill (`.claude/skills/media-ip-research`), on 
 
 **Never edit `Media IP Scripts Resources/content-pillars.md` unless Adit explicitly asks for that file to be updated by name.** It's the foundational taxonomy the whole project is built on — every skill, every dated folder, every topic log entry assumes it's stable. Don't touch it as a side effect of research, drafting, learning a new reference, or anything else, no matter how reasonable a tweak seems in the moment. If something seems to call for a pillar change, say so and ask — don't just make the edit.
 
-## Skill Update Approval
-
-Anyone can submit a script reference they like via the `/media-ip-learn` skill (`.claude/skills/media-ip-learn`) — but **only Adit can approve applying it** to `media-ip-scriptwriter`, `media-ip-compile`, `media-ip-captions`, or this CLAUDE.md. This is a deliberate guardrail Adit asked for: teammates' good intentions shouldn't be able to quietly weaken the established house voice.
-
-- **Approved identity**: `editsbyadit@gmail.com` (checked via local `git config user.email` in this project — a practical proxy, not cryptographic proof, but the agreed mechanism).
-- Every submission lands in `Media IP Scripts Resources/learned-references/pending/` first — never applied automatically, regardless of who submits it.
-- Even when the identity check passes (i.e. it's Adit), still ask him explicitly before writing the change — don't apply pending references silently just because the identity matched. Full flow is in the `media-ip-learn` skill.
-
 ## Editorial Rules
 
 This project's scripts have their own established voice — the `media-ip-scriptwriter` skill is the source of truth for it, documenting two house styles (beat-table and cinematic) extracted directly from produced Month 1 scripts. This project doesn't depend on any external voice-principles file; it's meant to be self-contained. Use the skill for scripts; use plain, direct, professional writing for anything script-adjacent that isn't the script itself (e.g. a note to a teammate).
@@ -65,4 +57,4 @@ This entire project (CLAUDE.md, MEMORY.md, Resources, and `.claude/skills/`) is 
 2. **After any edit** to CLAUDE.md, MEMORY.md, Resources, or a skill file during a session, immediately `git add`, commit with a short message describing the change, and `git push` — so the update reaches teammates without them touching git themselves.
 3. **If `git pull` reports a conflict**, stop and surface it to the person in chat rather than trying to resolve it silently.
 4. New individual script drafts are lower priority to sync immediately, but commit them too when convenient.
-5. `learned-references/pending/` submissions must be pushed immediately (not batched) — the whole point is Adit can review them from any machine without waiting on someone else's session to sync.
+5. `learned-references/` submissions must be pushed immediately (not batched) — so they're visible to everyone right away, not sitting on one person's machine.
