@@ -14,4 +14,4 @@
 - Brook 114* off 42 in the 1st T20I (15 Sept 2026, ENG won by 119 runs) — from a Cricinfo match-report headline + search summary. Verify balls, and whether it is England's fastest T20I hundred.
 - Series: T20Is 3–0, ODIs 2–1 to England, Brook Player of the Series in the T20Is (Will Jacks was Player of the ODI series). Confirmed via Wikipedia/Cricinfo summaries.
 - Confirm when Brook took over from Buttler (2025) and that he now leads both ODI and T20I sides.
-- Script lines about Buttler/Jacks/Baker "chal gaye" — Buttler top-scored with 172 runs, Baker and Dawson each took 6 wickets in the T20Is. Fine as written.
+- Twist line stats: Buttler 172 runs (England top scorer, T20Is), Baker 6 wickets (joint with Dawson), Jacks Player of the ODI series — confirm on Cricinfo.
