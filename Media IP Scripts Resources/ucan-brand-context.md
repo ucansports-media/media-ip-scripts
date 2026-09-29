@@ -29,5 +29,5 @@ This matters for scripts: **UCAN's own audience is a mix of players in its leagu
 
 ## What's still unknown
 
-- No founding date or origin story surfaced on any of the three sites — if this matters for a script (e.g. an "our story" piece), confirm with Adit rather than inventing one.
+- No founding date or origin story surfaced on any of the three sites — if this matters for a script (e.g. an "our story" piece), confirm with the team rather than inventing one.
 - No dedicated racket-sports site/page found separately from the main ucansports.in — racket content may live only there.

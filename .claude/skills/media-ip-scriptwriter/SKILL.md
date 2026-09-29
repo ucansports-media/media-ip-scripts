@@ -56,7 +56,7 @@ Dramatic, second-person or declarative narration. No visual-cue table, no explic
 
 ## Third Reference: The 39-Reel Corpus (Hook Craft)
 
-`Media IP Scripts Resources/reference-corpus/7 Min Football Reels Complete Transcripts - Final.docx` is a 39-script Instagram football reel corpus (166–326 words each, same 5-beat HOOK/SET-UP/STORY/TWIST/LINE shape as Voice 1 above, but for UCAN's separate short-form sports-reel product — a different, more compressed, dramatic-commentary register than either Media IP voice). Adit deliberately included it here as a **hook-craft reference only**, not as this IP's own voice. Pull from it for hook-writing technique (how it opens cold on a bold claim, how it escalates into the twist) rather than copying its sentence-level tone.
+`Media IP Scripts Resources/reference-corpus/7 Min Football Reels Complete Transcripts - Final.docx` is a 39-script Instagram football reel corpus (166–326 words each, same 5-beat HOOK/SET-UP/STORY/TWIST/LINE shape as Voice 1 above, but for UCAN's separate short-form sports-reel product — a different, more compressed, dramatic-commentary register than either Media IP voice). It's deliberately included here as a **hook-craft reference only**, not as this IP's own voice. Pull from it for hook-writing technique (how it opens cold on a bold claim, how it escalates into the twist) rather than copying its sentence-level tone.
 
 ## Shared Rules (both voices)
 

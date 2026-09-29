@@ -1,11 +1,11 @@
 ---
 name: media-ip-learn
-description: "Log a new script reference someone likes, with notes on what to take from it, so it can be reviewed and folded into the house voice when it genuinely fits. Use when Adit or a teammate runs /media-ip-learn, or shares a script/reel they liked and wants it considered for the house voice."
+description: "Log a new script reference someone likes, with notes on what to take from it, so it can be reviewed and folded into the house voice when it genuinely fits. Use when anyone on the team runs /media-ip-learn, or shares a script/reel they liked and wants it considered for the house voice."
 ---
 
 # Media IP Learn
 
-Lets anyone — Adit or a teammate — submit a script/reel they liked as a reference, with notes on what specifically to take from it.
+Lets anyone on the team submit a script/reel they liked as a reference, with notes on what specifically to take from it.
 
 ## Steps
 
