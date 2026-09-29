@@ -24,7 +24,7 @@ Three lines per script, in this order:
 
 ## Steps
 
-1. Find the target: a specific script Adit names, or every script in the most recent (or named) dated folder.
+1. Find the target: a specific script Adit names, or every script in the most recent (or named) dated folder (drafts live in its `drafts-md/` subfolder).
 2. For each script, read it fully — the caption should reflect the actual hook/theme of that specific script, not a generic sports caption.
 3. Produce the 3-line block above, per script, clearly labeled with the script's title/filename so it's easy to match caption to script.
 4. Save the output alongside the scripts: `<dated folder>/captions.md`, one block per script.

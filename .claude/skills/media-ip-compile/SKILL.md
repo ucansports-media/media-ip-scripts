@@ -10,7 +10,7 @@ Combines all finalized scripts for one shoot week into a single branded PDF, mir
 ## Steps
 
 1. **Find the week**: if Adit names a date, use it; otherwise use the most recent dated folder at the project root (`YYYY-MM-DD/`). Confirm the date back if ambiguous.
-2. **Collect scripts**: read every `<page>_<slug>.md` file in that dated folder. There should be up to 12 (4 pillars × 3 pages) — compile whatever's actually finalized, don't block on a partial week.
+2. **Collect scripts**: read every `<page>_<slug>.md` file in that dated folder's `drafts-md/` subfolder (or the folder itself for older weeks). There should be up to 12 (4 pillars × 3 pages) — compile whatever's actually finalized, don't block on a partial week.
 3. **Layout, matching the cinematic PDF reference**:
    - Header: UCAN Sports wordmark + Corpide logo (see Brand Assets below), "UCAN SPORTS · MEDIA IP" eyebrow label, orange accent rule.
    - Title: "Week of <date> — Shoot Scripts."

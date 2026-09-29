@@ -25,3 +25,4 @@
 - Hot topics cap: exactly 2 hot (trending/breaking) topics per sport per weekly topics doc, no more. Adit's explicit standing rule. (2026-09-29)
 - Cricket topics must cover players/teams from all over the world, not just India — India-heavy lists are wrong. Adit's explicit standing rule. (2026-09-29)
 - Script delivery format: one Word (.docx) file per sport per shoot week (`YYYY-MM-DD/<sport>_scripts.docx`, all 4 scripts inside), drafted sport by sport. Compile step comes after all 3 sport docs are done. Adit's instruction. (2026-09-29)
+- Always organize the dated shoot folder once work is done: `drafts-md/` (12 script .md), `word-docs/` (per-sport .docx); topics.docx, the compiled PDF and captions.md stay at the top. Adit's standing instruction. (2026-09-29)
