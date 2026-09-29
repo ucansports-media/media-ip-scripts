@@ -57,7 +57,9 @@ This project's scripts have their own established voice — the `media-ip-script
 
 ## Team Sync
 
-This entire project (CLAUDE.md, MEMORY.md, Resources, and `.claude/skills/`) is one git repo shared with the team via a private GitHub repo. Everything needed to work on this IP lives inside this one repo — that's deliberate, so it can be cloned or handed off as a self-contained unit. Follow these rules automatically, without being asked:
+This entire project (CLAUDE.md, MEMORY.md, Resources, and `.claude/skills/`) is one git repo. Everything needed to work on this IP lives inside this one repo — that's deliberate, so it can be cloned or handed off as a self-contained unit. Follow these rules automatically, without being asked:
+
+**Remotes**: the canonical, team-shared repo is `origin` → `github.com/ucansports-media/media-ip-scripts` (private) — this is what teammates clone and what `git pull`/`git push` target by default. Adit also keeps a personal mirror at `personal` → `github.com/editsbyadit/media-ip-scripts` — that's Adit-specific and not part of normal team sync; don't push there automatically, and don't expect teammates to have access to it.
 
 1. **At the start of every session** working in this project, run `git pull` first, so you're working from the latest CLAUDE.md, MEMORY.md, Resources, and skills teammates have pushed.
 2. **After any edit** to CLAUDE.md, MEMORY.md, Resources, or a skill file during a session, immediately `git add`, commit with a short message describing the change, and `git push` — so the update reaches teammates without them touching git themselves.
